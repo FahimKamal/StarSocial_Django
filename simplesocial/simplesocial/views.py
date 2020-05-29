@@ -5,8 +5,8 @@ class HomePage(TemplateView):
     template_name = 'index.html'
 
 
-class TestPage(TemplateView):
-    template_name = 'test.html'
+class WelcomePage(TemplateView):
+    template_name = 'welcome_page.html'
 
 
 class ThanksPage(TemplateView):
