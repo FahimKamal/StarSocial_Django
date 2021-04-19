@@ -22,8 +22,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ucwu88=9=fmazfuz$32tlh4)%m4=pgv&x35ko-4ty!xx&&z=&g'
 
+# Code for debug toolbar
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# Code for debug toolbar
 
 ALLOWED_HOSTS = []
 
@@ -37,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
+
+    # Debug toolbar
+    # 'debug_toolbar',
+    # Debug toolbar
+
     'bootstrap4',
     'accounts',
     'groups',
@@ -52,7 +58,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
+    # Code for debug toolbar
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'simplesocial.urls'
@@ -129,4 +137,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 LOGIN_REDIRECT_URL = 'welcome'
 LOGOUT_REDIRECT_URL = 'thanks'
 
-INTERNAL_IPS = ['127.0.0.1']
+# Code for debug toolbar
+# INTERNAL_IPS = ['127.0.0.1']
